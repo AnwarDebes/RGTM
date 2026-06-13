@@ -1,0 +1,2 @@
+{"task": "long_range_match", "L": 4, "K": 1, "clauses": 80, "T": 80, "s": 5.0, "depth": 2, "epochs": 12, "n_train": 200, "n_test": 100, "seed": 42, "acc": 0.46, "sec": 7.0}
+{"task": "long_range_match", "L": 4, "K": 3, "clauses": 80, "T": 80, "s": 5.0, "depth": 2, "epochs": 12, "n_train": 200, "n_test": 100, "seed": 42, "acc": 0.46, "sec": 3.8}

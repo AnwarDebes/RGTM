@@ -1,0 +1,8 @@
+{"task": "within_distance_k2", "model": "single-pass(d1)", "seed": 41, "acc": 0.52, "msg_ta_banks": 0, "reach": 1, "clauses": 2000, "sec": 11.1}
+{"task": "within_distance_k2", "model": "cair-depth2", "seed": 41, "acc": 0.52, "msg_ta_banks": 1, "reach": 1, "clauses": 2000, "sec": 50.8}
+{"task": "within_distance_k2", "model": "cair-depth3", "seed": 41, "acc": 0.52, "msg_ta_banks": 2, "reach": 2, "clauses": 2000, "sec": 91.6}
+{"task": "within_distance_k2", "model": "RGTM-r1", "seed": 41, "acc": 0.665, "msg_ta_banks": 1, "reach": 1, "clauses": 2000, "sec": 49.7}
+{"task": "within_distance_k2", "model": "RGTM-r2", "seed": 41, "acc": 0.52, "msg_ta_banks": 1, "reach": 2, "clauses": 2000, "sec": 101.5}
+{"task": "within_distance_k2", "model": "RGTM-r3", "seed": 41, "acc": 0.52, "msg_ta_banks": 1, "reach": 3, "clauses": 2000, "sec": 149.4}
+{"task": "within_distance_k2", "model": "single-pass(d1)", "seed": 42, "acc": 0.5075, "msg_ta_banks": 0, "reach": 1, "clauses": 2000, "sec": 6.4}
+{"task": "within_distance_k2", "model": "cair-depth2", "seed": 42, "acc": 0.715, "msg_ta_banks": 1, "reach": 1, "clauses": 2000, "sec": 51.2}

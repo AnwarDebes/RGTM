@@ -1,0 +1,2 @@
+{"task": "peptides_func_bin", "rounds": 0, "seed": 42, "acc": 0.64, "majority": 0.64, "clauses": 2000, "sec": 8.9}
+{"task": "peptides_func_bin", "rounds": 1, "seed": 42, "acc": 0.645, "majority": 0.64, "clauses": 2000, "sec": 8.4}

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1321"/>
+      <stop offset="1" stop-color="#1d2d44"/>
+    </linearGradient>
+    <linearGradient id="bank" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0a500"/>
+      <stop offset="1" stop-color="#c47f00"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#7ea8be"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#f0a500"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+
+  <!-- Title block -->
+  <text x="60" y="92" font-family="Georgia, serif" font-size="58" font-weight="bold" fill="#f5f5f5">RGTM</text>
+  <text x="60" y="130" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#aeb8c4">Recurrent Graph Tsetlin Machine</text>
+  <text x="60" y="160" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7ea8be">Weight-tied message passing: one shared clause bank,</text>
+  <text x="60" y="182" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7ea8be">reused every round, parameters constant in depth</text>
+
+  <!-- Honest tagline -->
+  <text x="60" y="252" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6c7a89">A characterization study: where tying is free,</text>
+  <text x="60" y="272" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#6c7a89">and where it costs capacity</text>
+
+  <!-- Center diagram: rounds feeding ONE shared bank -->
+  <!-- graph nodes (a path) -->
+  <g stroke="#41566e" stroke-width="2" fill="none">
+    <line x1="540" y1="80" x2="610" y2="80"/>
+    <line x1="610" y1="80" x2="680" y2="80"/>
+    <line x1="680" y1="80" x2="750" y2="80"/>
+  </g>
+  <circle cx="540" cy="80" r="13" fill="#3e5c76"/>
+  <circle cx="610" cy="80" r="13" fill="#3e5c76"/>
+  <circle cx="680" cy="80" r="13" fill="#3e5c76"/>
+  <circle cx="750" cy="80" r="13" fill="#748cab"/>
+  <text x="540" y="85" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#dbe4ee" text-anchor="middle">A</text>
+  <text x="750" y="85" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#0d1321" text-anchor="middle">B</text>
+
+  <!-- round arrows down to bank -->
+  <g stroke="#7ea8be" stroke-width="2" fill="none">
+    <path d="M560,105 C570,140 600,160 620,168" marker-end="url(#arrow)"/>
+    <path d="M645,100 C645,130 645,150 645,165" marker-end="url(#arrow)"/>
+    <path d="M730,105 C720,140 690,160 670,168" marker-end="url(#arrow)"/>
+  </g>
+  <text x="560" y="135" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#9fb9c8">r=1</text>
+  <text x="652" y="140" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#9fb9c8">r=2</text>
+  <text x="717" y="135" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#9fb9c8">r=3</text>
+
+  <!-- the ONE shared bank -->
+  <rect x="565" y="172" width="160" height="56" rx="10" fill="url(#bank)"/>
+  <text x="645" y="196" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#0d1321" text-anchor="middle">ONE shared</text>
+  <text x="645" y="216" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#0d1321" text-anchor="middle">message-TA bank</text>
+
+  <!-- recurrence loop arrow -->
+  <path d="M725,200 C790,200 790,118 762,95" stroke="#f0a500" stroke-width="2.5" fill="none" marker-end="url(#arrowGold)"/>
+  <text x="645" y="262" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#c9a24b" text-anchor="middle">every round, same automata</text>
+
+  <!-- Right: results bars -->
+  <text x="900" y="62" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#dbe4ee">Measured (5 seeds)</text>
+
+  <!-- 1-hop -->
+  <text x="900" y="98" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#aeb8c4">1-hop relation, tied R=1</text>
+  <rect x="900" y="106" width="220" height="14" rx="4" fill="#22344a"/>
+  <rect x="900" y="106" width="220" height="14" rx="4" fill="#5dd39e"/>
+  <text x="1128" y="118" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#5dd39e">1.000</text>
+
+  <!-- 2-hop tied -->
+  <text x="900" y="152" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#aeb8c4">2-hop, tied R=2</text>
+  <rect x="900" y="160" width="220" height="14" rx="4" fill="#22344a"/>
+  <rect x="900" y="160" width="159" height="14" rx="4" fill="#f0a500"/>
+  <text x="1128" y="172" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#f0a500">0.722</text>
+
+  <!-- 2-hop untied -->
+  <text x="900" y="206" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#aeb8c4">2-hop, untied depth-3</text>
+  <rect x="900" y="214" width="220" height="14" rx="4" fill="#22344a"/>
+  <rect x="900" y="214" width="220" height="14" rx="4" fill="#7ea8be"/>
+  <text x="1128" y="226" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#7ea8be">1.000</text>
+
+  <text x="900" y="262" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#6c7a89">Tying is free at one hop;</text>
+  <text x="900" y="280" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#6c7a89">it trades capacity beyond it</text>
+</svg>

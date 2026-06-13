@@ -1,0 +1,15 @@
+[project]
+name = "rgtm"
+version = "0.1.0"
+description = "Recurrent Graph Tsetlin Machine (RGTM): weight-tied, deep-supervised, adaptive-depth recurrence over the cair Graph Tsetlin Machine."
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "scikit-learn", "numba", "pycuda"]
+license = { text = "MIT" }
+authors = [{ name = "Anwar Debes" }]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["rgtm*"]
